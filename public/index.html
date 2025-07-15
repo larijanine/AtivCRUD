@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>CRUD Produtos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- TÍTULO -->
+  <h1>Gerenciamento de Produtos</h1>
+
+  <!-- LOGIN -->
+  <section id="loginSection">
+    <h2>Login</h2>
+    <input type="text" id="user" placeholder="Usuário" />
+    <input type="password" id="pass" placeholder="Senha" />
+    <button id="btnLogin">Entrar</button>
+    <p id="loginMsg"></p>
+  </section>
+
+  <!-- CRUD (fica oculto até logar) -->
+  <section id="crudSection" style="display:none;">
+    <h2>Produtos</h2>
+
+    <!-- Formulário de criação -->
+    <div class="form-inline">
+      <input type="text" id="nomeProduto" placeholder="Nome" />
+      <input type="number" id="precoProduto" placeholder="Preço" step="0.01" />
+      <button id="btnAdd">Adicionar</button>
+    </div>
+
+    <!-- Tabela listagem -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th><th>Nome</th><th>Preço</th><th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaCorpo"></tbody>
+    </table>
+  </section>
+
+  <!-- JS gerado pelo TypeScript -->
+  <script src="app.js"></script>
+</body>
+</html>
